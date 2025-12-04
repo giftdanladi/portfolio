@@ -2,9 +2,13 @@
 
 import About from '@/components/About'
 import Aside from '@/components/Aside'
-import Loader from '@/components/Loader'
 import pageanim from '@/animations/pageanim.json';
 import {useState } from 'react'
+import dynamic from "next/dynamic";
+
+const Loader = dynamic(() => import("@/components/Loader"), {
+  ssr: false,
+});
 
 export default function Home() {
 

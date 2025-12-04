@@ -1,7 +1,11 @@
 import Aside from "@/components/Aside"
 import Contact from "@/components/Contact"
-import Loader from "@/components/Loader"
 import pageanim from '@/animations/pageanim.json'
+import dynamic from "next/dynamic";
+
+const Loader = dynamic(() => import("@/components/Loader"), {
+  ssr: false,
+});
 
 const page = () => {
     return (

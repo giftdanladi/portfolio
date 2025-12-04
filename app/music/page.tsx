@@ -1,7 +1,11 @@
 import Aside from "@/components/Aside"
-import Loader from "@/components/Loader"
 import musicanim from '@/animations/musicanim.json'
 import Music from "@/components/Music"
+import dynamic from "next/dynamic";
+
+const Loader = dynamic(() => import("@/components/Loader"), {
+  ssr: false,
+});
 
 const page = () => {
     return (
