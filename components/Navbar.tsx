@@ -24,11 +24,11 @@ const Navbar = () => {
             <main>
                 <section className="w-full flex justify-between">
                     <h1 className={`text-3xl ${pacifico.className}`}>Gift <span className='text-orange-500'>Danladi</span></h1>
-                    <div className="theme bg-[#EBF2FA] dark:bg-slate-700 w-10 h-10 rounded-full flex justify-center items-center border-2 border-gray-200 dark:border-gray-500 cursor-pointer" onClick={() => toast.info('Theme is dependent on your system')}>
+                    <Link href={'/privacy-policy'} className="theme bg-[#EBF2FA] dark:bg-slate-700 w-10 h-10 rounded-full flex justify-center items-center border-2 border-gray-200 dark:border-gray-500 cursor-pointer">
                         {/* <span className='text-2xl hover:animate-pulse hover:-skew-y-6 transition duration-500 hover:scale-125'>🕶️</span> */}
                         <IoGlasses className='text-2xl hover:animate-pulse hover:-skew-y-6 transition duration-500 hover:scale-125 dark:text-white' />
                         {/* <span className='text-2xl'>👓</span> */}
-                    </div>
+                    </Link>
                 </section>
 
                 <nav className="border-2 border-gray-200 dark:border-gray-500 p-5 w-full lg:w-[26rem] flex items-center gap-5 rounded-2xl float-right mt-14">
