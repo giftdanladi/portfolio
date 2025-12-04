@@ -3,10 +3,8 @@
 import About from '@/components/About'
 import Aside from '@/components/Aside'
 import Loader from '@/components/Loader'
-import Resume from '@/components/Resume'
-import Image from 'next/image'
 import pageanim from '@/animations/pageanim.json';
-import { useEffect, useState, useContext } from 'react'
+import {useState } from 'react'
 
 export default function Home() {
 

@@ -3,8 +3,8 @@
 import React, { FormEventHandler, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import { FiMail, FiPhoneCall, FiPocket } from "react-icons/fi"
-import { Luckiest_Guy, Pacifico } from 'next/font/google'
+import { FiMail, FiPhoneCall } from "react-icons/fi"
+import { Luckiest_Guy } from 'next/font/google'
 import Alert from './Alert';
 const luckiest = Luckiest_Guy({ subsets: ['latin'], weight: ['400'] })
 
