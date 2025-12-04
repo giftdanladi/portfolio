@@ -1,7 +1,6 @@
 import { Luckiest_Guy, Pacifico } from 'next/font/google'
 import { FiPocket } from 'react-icons/fi'
 const luckiest = Luckiest_Guy({ subsets: ['latin'], weight: ['400'] })
-const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] })
 
 export default function Resume() {
     return (
